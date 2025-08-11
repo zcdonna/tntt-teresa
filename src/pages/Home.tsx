@@ -6,9 +6,14 @@ const Home = (): JSX.Element => {
         <>
         <div className = {styles.infoAndPictureContainer}>
             <div>
+                <div>
+                    <h2>St. Theresa of the Child Jesus Chapter - Bridgeport, CT</h2>
+                    <p>St. Paul Hanh League of Chapters - LDPH</p>
+                    <p>Vietnamese Eucharistic Youth Movement</p>
                 <h1>Schedule</h1>
                 <p>Holy Mass Time: Sunday @ 2:00 PM (Vietnamese)</p>
                 <p>Activities: Sunday @ 12:00 PM - 1:45 PM (as scheduled on our academic calendar)</p>
+                </div>
             </div>
             <div>
                 <h1>Photo Gallery Placeholder</h1>
