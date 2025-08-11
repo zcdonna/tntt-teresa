@@ -1,0 +1,25 @@
+:root {
+  /* Light Mode Colors */
+  --primary-red: #E30613;
+  --primary-yellow: #FFD200;
+  --primary-green: #009640;
+  --primary-brown: #8B4B34;
+  --primary-pink: #F28CA4;
+  
+  --background-color: #FFFFFF;
+  --text-color: #1A1A1A;
+  --accent-color: var(--primary-red);
+}
+
+.dark {
+  /* Dark Mode Colors */
+  --primary-red: #FF4D4D; /* slightly lighter for contrast */
+  --primary-yellow: #FFD84D;
+  --primary-green: #33CC66;
+  --primary-brown: #C78B6A;
+  --primary-pink: #FFB6C1;
+  
+  --background-color: #121212;
+  --text-color: #EAEAEA;
+  --accent-color: var(--primary-yellow);
+}

@@ -1,0 +1,19 @@
+.infoAndPictureContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* ---------- Medium Screens (Tablet) ---------- */
+@media (min-width: 769px) and (max-width: 959px) {
+.infoAndPictureContainer{
+    flex-direction: row;
+    }
+}
+
+/* ---------- Large Screens (Desktop) ---------- */
+@media (min-width: 960px) {
+.infoAndPictureContainer{
+flex-direction: row;
+}
+}
