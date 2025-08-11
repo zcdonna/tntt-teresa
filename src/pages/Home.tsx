@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 
 const Home = (): JSX.Element => {
   return (
+    <>
     <main className={styles.container}>
       <div className={styles.infoAndPictureContainer}>
         <section className={styles.infoSection}>
@@ -36,6 +37,12 @@ const Home = (): JSX.Element => {
         </section>
       </div>
     </main>
+
+    <div className={styles.upcomingEvent}>
+        <h2>Upcoming Events</h2>
+
+    </div>
+    </>
   );
 };
 
