@@ -14,6 +14,7 @@ const Home = (): JSX.Element => {
                 <h1>Photo Gallery Placeholder</h1>
                 <p>Photo 1</p>
                 <p>Photo 2</p>
+                <p>Photo 3</p>
             </div>
         </div>
         </>
