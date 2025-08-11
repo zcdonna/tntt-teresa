@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 2rem;
+  padding-left: 1rem;   /* added horizontal padding */
+  padding-right: 1rem;  /* added horizontal padding */
+  box-sizing: border-box; /* ensure padding doesn’t break width */
 }
 
 .boardMember {
@@ -31,7 +34,9 @@
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
+  padding-left: 1rem;   /* added horizontal padding */
+  padding-right: 1rem;  /* added horizontal padding */
+  box-sizing: border-box;
 }
 
 .pastBoardMembers {
@@ -61,6 +66,8 @@
 @media (max-width: 600px) {
   .boardMemberContainer {
     justify-content: center;
+    padding-left: 1rem;  /* keep padding on small screens */
+    padding-right: 1rem;
   }
   .pastBoardMembers {
     flex-direction: column;
@@ -75,6 +82,12 @@
   .boardMemberContainer {
     justify-content: space-evenly;
     gap: 2rem;
+    padding-left: 2rem;   /* increase horizontal padding */
+    padding-right: 2rem;
+  }
+  .pastBoardMembersContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .pastBoardMembers {
     flex-direction: row;
@@ -90,9 +103,13 @@
   .boardMemberContainer {
     justify-content: space-evenly;
     gap: 3rem;
+    padding-left: 3rem;   /* larger padding on large screens */
+    padding-right: 3rem;
   }
   .pastBoardMembersContainer {
     max-width: 1100px;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .pastBoardMembers {
     gap: 3rem;

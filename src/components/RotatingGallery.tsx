@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import type { JSX } from "react";
-import styles from "./Home.module.css";
+import styles from "./RotatingGallery.module.css"
 
-const photos = [
-  "/path/to/photo1.jpg",
-  "/path/to/photo2.jpg",
-  "/path/to/photo3.jpg",
-  // add more image paths here
-];
+import photo1 from "../images/photo1.png"
+import photo2 from "../images/photo2.png"
+import photo3 from "../images/photo3.jpg"
+
+
+const photos = [photo1, photo2, photo3];
 
 const RotatingGallery = (): JSX.Element => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,7 +15,7 @@ const RotatingGallery = (): JSX.Element => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 3000); // rotate every 3 seconds
+    }, 4000); // rotate every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
