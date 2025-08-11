@@ -1,5 +1,6 @@
 import type { JSX } from "react";
 import styles from "./Home.module.css";
+import RotatingGallery from "../components/RotatingGallery";
 
 const Home = (): JSX.Element => {
   return (
@@ -29,11 +30,12 @@ const Home = (): JSX.Element => {
 
         <section className={styles.gallerySection}>
           <h3>Photo Gallery</h3>
-          <div className={styles.photos}>
+          {/* <div className={styles.photos}>
             <div className={styles.photoPlaceholder}>Photo 1</div>
             <div className={styles.photoPlaceholder}>Photo 2</div>
             <div className={styles.photoPlaceholder}>Photo 3</div>
-          </div>
+          </div> */}
+          <RotatingGallery />
         </section>
       </div>
     </main>
