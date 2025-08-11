@@ -1,0 +1,56 @@
+.wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column; /* always stacked */
+  align-items: center;    /* center horizontally */
+  gap: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Calendar iframe */
+.calendar {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.calendar:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Announcements */
+.announcements {
+  background-color: #f9f9f9;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.announcements h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #E30613; /* primary red */
+  border-bottom: 3px solid #FFD200; /* primary yellow */
+  padding-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.announcements p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.announcements p strong {
+  color: #009640; /* primary green */
+}
