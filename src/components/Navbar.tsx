@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 
 // import lightModeIcon from "../images/sun.png";
 // import darkModeIcon from "../images/moon.png";
+import youthGroupLogoIcon from "../images/YouthGroupLogo.png"
 import facebookIcon from "../images/facebook.png";
 import instagramIcon from "../images/instagram.png";
 
@@ -17,7 +18,7 @@ const Navbar = (): JSX.Element => {
       {/* Logo */}
       <div className={styles.logoContainer} onClick={() => navigate("/")}>
         <img 
-          src="src/images/YouthGroupLogo.png" 
+          src={youthGroupLogoIcon}
           alt="Youth Group Logo" 
           className={styles.logo} 
         />
