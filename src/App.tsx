@@ -22,6 +22,32 @@ const App = () => {
     document.body.classList.add(theme);
   }, [theme]);
 
+  // Use to access the website: 
+  const [password, setPassword] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const handleLogin = () => {
+    if (password === "mypassword123") {
+      setIsAuthenticated(true);
+    } else {
+      alert("Wrong password!");
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div style={{ textAlign: "center", padding: "2rem" }}>
+        <h2>Enter Password</h2>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={handleLogin}>Submit</button>
+      </div>
+    );
+  }
+
   return (
     <div>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>

@@ -40,10 +40,23 @@ const Home = (): JSX.Element => {
       </div>
     </main>
 
-    <div className={styles.upcomingEvent}>
-        <h2>Upcoming Events</h2>
-
+    <div className={styles.recentNews}>
+      <h2>Recent News</h2>
+      <p>
+        The first day of the 2025-2026 academic year is <strong>Sept 7th, 2025</strong>! 
+        Registration form is now available. Please sign your child(ren) up from now until 
+        Sept 7th, 2025 by filling out and handing the form to one of our Youth Leaders!
+      </p>
+      <a
+        className={styles.downloadBtn}
+        href="https://drive.google.com/file/d/1AASa_ZloWVgwx41Qa-lPhcwomAaUZ1Yx/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📄 Download Registration Form
+      </a>
     </div>
+
     </>
   );
 };

@@ -47,7 +47,7 @@ const Navbar = (): JSX.Element => {
 
         {/* Facebook */}
         <a
-          href="https://www.facebook.com/YourPageHere"
+          href="https://www.facebook.com/DoanTNTTTeresaHDGBptCT/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -56,7 +56,7 @@ const Navbar = (): JSX.Element => {
 
         {/* Instagram */}
         <a
-          href="https://www.instagram.com/YourPageHere"
+          href="https://www.instagram.com/tntt.teresa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           target="_blank"
           rel="noopener noreferrer"
         >
