@@ -1,0 +1,120 @@
+.boardMemberContainer {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding-left: 1rem;   /* added horizontal padding */
+  padding-right: 1rem;  /* added horizontal padding */
+  box-sizing: border-box; /* ensure padding doesn’t break width */
+}
+
+.boardMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.boardMember img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/* Past Board Members Container */
+.pastBoardMembersContainer {
+  margin-top: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;   /* added horizontal padding */
+  padding-right: 1rem;  /* added horizontal padding */
+  box-sizing: border-box;
+}
+
+.pastBoardMembers {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pastBoardMembers p {
+  font-weight: 600;
+  min-width: 150px;
+  margin: 0;
+}
+
+.pastBoardMembers ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.pastBoardMembers ul li {
+  margin-bottom: 0.3rem;
+}
+
+/* Mobile first (default) */
+@media (max-width: 600px) {
+  .boardMemberContainer {
+    justify-content: center;
+    padding-left: 1rem;  /* keep padding on small screens */
+    padding-right: 1rem;
+  }
+  .pastBoardMembers {
+    flex-direction: column;
+  }
+  .pastBoardMembers p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Medium screens: tablets/small desktops */
+@media (min-width: 769px) and (max-width: 959px) {
+  .boardMemberContainer {
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-left: 2rem;   /* increase horizontal padding */
+    padding-right: 2rem;
+  }
+  .pastBoardMembersContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .pastBoardMembers {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .pastBoardMembers p {
+    min-width: 180px;
+  }
+}
+
+/* Large screens: desktops and up */
+@media (min-width: 960px) {
+  .boardMemberContainer {
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding-left: 3rem;   /* larger padding on large screens */
+    padding-right: 3rem;
+  }
+  .pastBoardMembersContainer {
+    max-width: 1100px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .pastBoardMembers {
+    gap: 3rem;
+  }
+  .pastBoardMembers p {
+    min-width: 200px;
+  }
+}

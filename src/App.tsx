@@ -4,6 +4,10 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import { ThemeContext } from './contexts/ThemeContext';
 import { useEffect, useState } from 'react';
+import EventAnnouncement from './pages/Event-Announcement';
+import About from './pages/About';
+import Resources from './pages/Resources';
+import Photos from './pages/Photos';
 
 
 const App = () => {
@@ -24,6 +28,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/events" element={<EventAnnouncement />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/photos" element={<Photos />} />
       </Routes>
       </ThemeContext.Provider>
     </div>
