@@ -29,7 +29,7 @@ const Home = (): JSX.Element => {
         </section>
 
         <section className={styles.gallerySection}>
-          <h3>Photo Gallery</h3>
+          {/* <h3>Photo Gallery</h3> */}
           {/* <div className={styles.photos}>
             <div className={styles.photoPlaceholder}>Photo 1</div>
             <div className={styles.photoPlaceholder}>Photo 2</div>

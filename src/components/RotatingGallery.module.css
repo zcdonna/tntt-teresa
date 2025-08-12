@@ -1,20 +1,39 @@
+/* ---------- Mobile First (Default) ---------- */
 .rotatingGallery {
-  width: 600px;        /* fixed width */
-  height: 400px;       /* fixed height */
+  width: 100%;               /* fills parent */
+  max-width: 100%;           /* no restriction on mobile */
+  aspect-ratio: 4 / 3;       /* keeps proportion */
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background-color: #ffffff; /* optional: a background so empty areas look nice */
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .rotatingPhoto {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;               /* fill container */
+  height: 100%;
+  object-fit: cover;         /* crop to fill space */
   transform: translate(-50%, -50%);
-  object-fit: contain;  /* keep aspect ratio and fit inside container */
   transition: opacity 0.8s ease-in-out;
   opacity: 1;
+}
+
+/* ---------- Tablet Screens (769px–959px) ---------- */
+@media (min-width: 769px) and (max-width: 959px) {
+  .rotatingGallery {
+    max-width: 700px;        /* matches .gallerySection */
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ---------- Desktop Screens (960px and up) ---------- */
+@media (min-width: 960px) {
+  .rotatingGallery {
+    max-width: 900px;        /* matches larger .gallerySection */
+    aspect-ratio: 4 / 3;
+  }
 }

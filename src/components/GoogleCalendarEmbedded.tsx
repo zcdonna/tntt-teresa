@@ -5,7 +5,7 @@ const GoogleCalendarEmbed = () => {
     <div className={styles.wrapper}>
       <iframe
         className={styles.calendar}
-        src="https://calendar.google.com/calendar/embed?src=dchow%40indeed.com&ctz=America%2FNew_York"
+        src="https://calendar.google.com/calendar/embed?src=dtnttteresa%40gmail.com&ctz=America%2FNew_York"
         style={{ border: 0 }}
         width="800"
         height="600"

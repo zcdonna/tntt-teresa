@@ -4,9 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 2rem;
-  padding-left: 1rem;   /* added horizontal padding */
-  padding-right: 1rem;  /* added horizontal padding */
-  box-sizing: border-box; /* ensure padding doesn’t break width */
+  padding-left: 1.5rem;   /* increased horizontal padding */
+  padding-right: 1.5rem;  /* increased horizontal padding */
+  box-sizing: border-box; /* ensure padding doesn't break width */
+  max-width: 100%;        /* ensure container respects viewport width */
 }
 
 .boardMember {
@@ -34,8 +35,8 @@
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;   /* added horizontal padding */
-  padding-right: 1rem;  /* added horizontal padding */
+  padding-left: 1.5rem;   /* increased horizontal padding */
+  padding-right: 1.5rem;  /* increased horizontal padding */
   box-sizing: border-box;
 }
 
@@ -66,8 +67,12 @@
 @media (max-width: 600px) {
   .boardMemberContainer {
     justify-content: center;
-    padding-left: 1rem;  /* keep padding on small screens */
-    padding-right: 1rem;
+    padding-left: 1.5rem;  /* increased padding on small screens */
+    padding-right: 1.5rem;
+  }
+  .pastBoardMembersContainer {
+    padding-left: 1.5rem;  /* ensure consistent padding */
+    padding-right: 1.5rem;
   }
   .pastBoardMembers {
     flex-direction: column;
@@ -82,12 +87,12 @@
   .boardMemberContainer {
     justify-content: space-evenly;
     gap: 2rem;
-    padding-left: 2rem;   /* increase horizontal padding */
-    padding-right: 2rem;
+    padding-left: 2.5rem;   /* increased horizontal padding */
+    padding-right: 2.5rem;
   }
   .pastBoardMembersContainer {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.5rem;   /* increased horizontal padding */
+    padding-right: 2.5rem;
   }
   .pastBoardMembers {
     flex-direction: row;
@@ -103,13 +108,13 @@
   .boardMemberContainer {
     justify-content: space-evenly;
     gap: 3rem;
-    padding-left: 3rem;   /* larger padding on large screens */
-    padding-right: 3rem;
+    padding-left: 3.5rem;   /* increased padding on large screens */
+    padding-right: 3.5rem;
   }
   .pastBoardMembersContainer {
     max-width: 1100px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3.5rem;   /* increased horizontal padding */
+    padding-right: 3.5rem;
   }
   .pastBoardMembers {
     gap: 3rem;
