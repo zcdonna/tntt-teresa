@@ -56,7 +56,8 @@
 .pastBoardMembers ul {
   margin: 0;
   padding-left: 1.25rem;
-  list-style-type: disc;
+  /* list-style-type: disc; */
+  list-style: none;
 }
 
 .pastBoardMembers ul li {
@@ -91,8 +92,8 @@
     padding-right: 2.5rem;
   }
   .pastBoardMembersContainer {
-    padding-left: 2.5rem;   /* increased horizontal padding */
-    padding-right: 2.5rem;
+    padding-left: 1.0rem;   /* increased horizontal padding */
+    padding-right: 1.0rem;
   }
   .pastBoardMembers {
     flex-direction: row;
@@ -112,9 +113,9 @@
     padding-right: 3.5rem;
   }
   .pastBoardMembersContainer {
-    max-width: 1100px;
-    padding-left: 3.5rem;   /* increased horizontal padding */
-    padding-right: 3.5rem;
+    max-width: 1200px;
+    padding-left: 1.5rem;   /* increased horizontal padding */
+    padding-right: 1.5rem;
   }
   .pastBoardMembers {
     gap: 3rem;

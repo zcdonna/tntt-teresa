@@ -16,6 +16,7 @@
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   color: #222;
+  margin-top: .5rem;
 }
 
 .resource p {
@@ -37,6 +38,13 @@
 .photo:hover {
   transform: scale(1.05);
 }
+
+    .regionalnationallogo {
+    width: 15vw;
+    max-width: 90px;
+    min-width: 70px;
+    aspect-ratio: 1 / 1;
+  }
 
 /* Mobile first (default): stack vertically */
 @media (max-width: 600px) {
@@ -69,6 +77,20 @@
   .resource p {
     font-size: 1.1rem;
   }
+
+    .regionalnationallogo {
+    width: 15vw;
+    max-width: 100px;
+    min-width: 80px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .regionallogo{
+    width: 15vw;
+    max-width: 110px;
+    min-width: 90px;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 /* Large screens: 960px and up */
@@ -91,5 +113,19 @@
 
   .resource p {
     font-size: 1.15rem;
+  }
+
+    .regionalnationallogo {
+    width: 15vw;
+    max-width: 100px;
+    min-width: 80px;
+    aspect-ratio: 1 / 1;
+  }
+
+    .regionallogo{
+    width: 15vw;
+    max-width: 110px;
+    min-width: 90px;
+    aspect-ratio: 1 / 1;
   }
 }
